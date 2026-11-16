@@ -62,8 +62,9 @@ def cargar():
 faltan = [f for f in REQUERIDOS if not os.path.exists(f)]
 if faltan:
     st.error(f"Faltan archivos en esta carpeta: {', '.join(faltan)}")
-    st.caption("Son los que genera pipeline.py y vienen en poc_tfg.zip. "
-               "Copialos junto a app.py.")
+    st.caption("Son los que genera pipeline.py y vienen junto al código. "
+               "Suele pasar por lanzar la interfaz desde otra carpeta: "
+               "hacé cd a la que los contiene y volvé a correrla.")
     st.stop()
 
 try:
