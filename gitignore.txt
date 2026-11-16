@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# El dataset original, que se baja de Figshare (142 MB)
+run_ww_*.csv
+
+# Figuras generadas por figuras.py
+fig_barrido.*
+fig_escalado.*

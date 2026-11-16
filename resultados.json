@@ -1,0 +1,405 @@
+{
+  "corpus": {
+    "registros": 1893424,
+    "atletas_total": 36412,
+    "con_major": 15874,
+    "suficientes": 31577,
+    "outliers": 4306,
+    "final": 14612
+  },
+  "carga": {
+    "tss_media": 278.64520820321303,
+    "tss_mediana": 244.01087028531657,
+    "ctl_media": 280.39412211005146,
+    "ctl_mediana": 249.48659108788527
+  },
+  "vector": {
+    "dim": 13,
+    "n": 14612,
+    "features": [
+      "dist_media",
+      "dist_std",
+      "dist_p90",
+      "dist_total",
+      "ctl_final",
+      "ctl_max",
+      "tss_medio",
+      "tsb_std",
+      "ritmo_mediano",
+      "ritmo_umbral",
+      "semanas_act",
+      "consistencia",
+      "progresion"
+    ],
+    "mb": 0.759824
+  },
+  "construccion": {
+    "flat_ms": 0.3108140000165349,
+    "hnsw_ms": 295.57318999999893,
+    "ratio": 950.9648535274306,
+    "mem_flat_mb": 0.759824,
+    "mem_hnsw_mb": 4.500496
+  },
+  "busqueda": {
+    "n_queries": 1000,
+    "k": 10,
+    "flat_ms_total": 43.10645099999988,
+    "hnsw_ms_total": 12.304706999998416,
+    "flat_ms_query": 0.04310645099999988,
+    "hnsw_ms_query": 0.012304706999998416,
+    "speedup": 3.5032488786612657,
+    "recall": 1.0,
+    "equilibrio_consultas": 9585.897993307404
+  },
+  "proxy": {
+    "maraton": {
+      "observado": 0.33379999999999993,
+      "azar": 0.21597990963856104,
+      "lift": 1.5455141200800062
+    },
+    "genero": {
+      "observado": 0.6732,
+      "azar": 0.6070148554349617,
+      "lift": 1.1090338135425248
+    },
+    "grupo etario": {
+      "observado": 0.4879,
+      "azar": 0.46411312595409815,
+      "lift": 1.0512523191344827
+    }
+  },
+  "barrido": [
+    {
+      "ef": 8,
+      "recall": 0.9874,
+      "ms": 0.0031300819999842133
+    },
+    {
+      "ef": 16,
+      "recall": 0.998,
+      "ms": 0.0043756080000036945
+    },
+    {
+      "ef": 32,
+      "recall": 1.0,
+      "ms": 0.007110167999996975
+    },
+    {
+      "ef": 64,
+      "recall": 1.0,
+      "ms": 0.0118593929999804
+    },
+    {
+      "ef": 128,
+      "recall": 1.0,
+      "ms": 0.021292780000010225
+    },
+    {
+      "ef": 256,
+      "recall": 1.0,
+      "ms": 0.041820153999992726
+    }
+  ],
+  "escalado": [
+    {
+      "n": 14612,
+      "flat_ms": 0.04104817666672034,
+      "hnsw_ms": 0.012045756666717958,
+      "speedup": 3.4076876864145147,
+      "recall": 1.0
+    },
+    {
+      "n": 58448,
+      "flat_ms": 0.15916012000000518,
+      "hnsw_ms": 0.013664553333398999,
+      "speedup": 11.647663565481125,
+      "recall": 1.0
+    },
+    {
+      "n": 233792,
+      "flat_ms": 0.6276055900000681,
+      "hnsw_ms": 0.019297059999985322,
+      "speedup": 32.523378690875475,
+      "recall": 1.0
+    },
+    {
+      "n": 935168,
+      "flat_ms": 3.159491086666624,
+      "hnsw_ms": 0.02010031999996424,
+      "speedup": 157.18610881181223,
+      "recall": 1.0
+    }
+  ],
+  "cualitativo": {
+    "volumen bajo": {
+      "query": {
+        "dist_media": 17.109147727272727,
+        "ctl_final": 87.85909207888645,
+        "ritmo_mediano": 6.089747093409125,
+        "semanas_act": 44.0,
+        "progresion": -1.190727894859536,
+        "ciudad": "TOKYO",
+        "genero": "M",
+        "edad": "55 +"
+      },
+      "vecinos": [
+        {
+          "dist_media": 15.343698863636364,
+          "ctl_final": 125.85041339215809,
+          "ritmo_mediano": 5.891861544273581,
+          "semanas_act": 44.0,
+          "progresion": 0.039962042790495186,
+          "ciudad": "TOKYO"
+        },
+        {
+          "dist_media": 14.648848837209302,
+          "ctl_final": 127.65236447113173,
+          "ritmo_mediano": 5.952737062518696,
+          "semanas_act": 43.0,
+          "progresion": -0.17579376627331147,
+          "ciudad": "NEW YORK"
+        },
+        {
+          "dist_media": 17.357905487804878,
+          "ctl_final": 106.35302265366158,
+          "ritmo_mediano": 5.91,
+          "semanas_act": 41.0,
+          "progresion": -1.820986337546524,
+          "ciudad": "BERLIN"
+        },
+        {
+          "dist_media": 16.36426829268293,
+          "ctl_final": 93.32694626829452,
+          "ritmo_mediano": 6.321525885558583,
+          "semanas_act": 41.0,
+          "progresion": -1.794894573088653,
+          "ciudad": "BOSTON"
+        },
+        {
+          "dist_media": 18.509522727272728,
+          "ctl_final": 61.54532475407072,
+          "ritmo_mediano": 6.07649028844593,
+          "semanas_act": 44.0,
+          "progresion": -0.645160058247678,
+          "ciudad": "TOKYO"
+        }
+      ],
+      "dev_z": 0.13843221962451935,
+      "dev_z_k": 10
+    },
+    "volumen alto": {
+      "query": {
+        "dist_media": 82.20077403846153,
+        "ctl_final": 605.5666488567725,
+        "ritmo_mediano": 5.069229606165731,
+        "semanas_act": 52.0,
+        "progresion": 1.7697858667418767,
+        "ciudad": "BOSTON",
+        "genero": "F",
+        "edad": "18 - 34"
+      },
+      "vecinos": [
+        {
+          "dist_media": 83.93054411764705,
+          "ctl_final": 655.0702412606057,
+          "ritmo_mediano": 4.851141924959217,
+          "semanas_act": 51.0,
+          "progresion": 0.15570184406598045,
+          "ciudad": "CHICAGO"
+        },
+        {
+          "dist_media": 83.29715865384615,
+          "ctl_final": 711.0168726951996,
+          "ritmo_mediano": 5.052007849838793,
+          "semanas_act": 52.0,
+          "progresion": 0.7276901208889809,
+          "ciudad": "BOSTON"
+        },
+        {
+          "dist_media": 80.29972596153847,
+          "ctl_final": 678.7799585634995,
+          "ritmo_mediano": 5.00201366098482,
+          "semanas_act": 52.0,
+          "progresion": 2.2160928494709564,
+          "ciudad": "NEW YORK"
+        },
+        {
+          "dist_media": 86.96861538461539,
+          "ctl_final": 601.6509547389123,
+          "ritmo_mediano": 5.038708833723885,
+          "semanas_act": 52.0,
+          "progresion": 0.6688654808101521,
+          "ciudad": "BOSTON"
+        },
+        {
+          "dist_media": 78.49736764705882,
+          "ctl_final": 534.2001391278075,
+          "ritmo_mediano": 5.022094140249759,
+          "semanas_act": 51.0,
+          "progresion": 0.8527080074663315,
+          "ciudad": "BOSTON"
+        }
+      ],
+      "dev_z": 0.1708744615316391,
+      "dev_z_k": 10
+    },
+    "progresion alta": {
+      "query": {
+        "dist_media": 40.79961363636364,
+        "ctl_final": 234.7584948938318,
+        "ritmo_mediano": 5.480847987010465,
+        "semanas_act": 22.0,
+        "progresion": 8.946077872432548,
+        "ciudad": "BERLIN",
+        "genero": "M",
+        "edad": "35 - 54"
+      },
+      "vecinos": [
+        {
+          "dist_media": 38.09947916666666,
+          "ctl_final": 182.62932149372708,
+          "ritmo_mediano": 5.386481949170403,
+          "semanas_act": 24.0,
+          "progresion": 7.259271715175752,
+          "ciudad": "BERLIN"
+        },
+        {
+          "dist_media": 39.936447916666665,
+          "ctl_final": 222.0955732023003,
+          "ritmo_mediano": 5.8470721084743875,
+          "semanas_act": 24.0,
+          "progresion": 7.810508816365424,
+          "ciudad": "BERLIN"
+        },
+        {
+          "dist_media": 43.977291666666666,
+          "ctl_final": 322.21654542107035,
+          "ritmo_mediano": 5.562958280657396,
+          "semanas_act": 24.0,
+          "progresion": 10.228419084265438,
+          "ciudad": "BERLIN"
+        },
+        {
+          "dist_media": 43.23886458333334,
+          "ctl_final": 245.91864438139334,
+          "ritmo_mediano": 5.824648414594699,
+          "semanas_act": 24.0,
+          "progresion": 9.551126514264498,
+          "ciudad": "NEW YORK"
+        },
+        {
+          "dist_media": 43.44917857142857,
+          "ctl_final": 312.74195519607116,
+          "ritmo_mediano": 5.755311148712163,
+          "semanas_act": 21.0,
+          "progresion": 9.411592768095627,
+          "ciudad": "CHICAGO"
+        }
+      ],
+      "dev_z": 0.2385544776916504,
+      "dev_z_k": 10
+    },
+    "progresion negativa": {
+      "query": {
+        "dist_media": 41.694,
+        "ctl_final": 0.010399650935636617,
+        "ritmo_mediano": 5.986464979850208,
+        "semanas_act": 20.0,
+        "progresion": -10.019624970343079,
+        "ciudad": "LONDON",
+        "genero": "M",
+        "edad": "35 - 54"
+      },
+      "vecinos": [
+        {
+          "dist_media": 36.532875000000004,
+          "ctl_final": 29.96351105692319,
+          "ritmo_mediano": 5.654380634629746,
+          "semanas_act": 20.0,
+          "progresion": -8.902270733037108,
+          "ciudad": "LONDON"
+        },
+        {
+          "dist_media": 33.6595,
+          "ctl_final": 0.01164415696922274,
+          "ritmo_mediano": 5.800020426026548,
+          "semanas_act": 24.0,
+          "progresion": -11.044407354127205,
+          "ciudad": "BOSTON"
+        },
+        {
+          "dist_media": 30.617416666666667,
+          "ctl_final": 3.634202829809536,
+          "ritmo_mediano": 6.169588520530938,
+          "semanas_act": 24.0,
+          "progresion": -9.1105087772708,
+          "ciudad": "LONDON"
+        },
+        {
+          "dist_media": 30.678166666666666,
+          "ctl_final": 9.165314996344225,
+          "ritmo_mediano": 5.629582442285132,
+          "semanas_act": 24.0,
+          "progresion": -9.220261412998543,
+          "ciudad": "BOSTON"
+        },
+        {
+          "dist_media": 34.00985714285714,
+          "ctl_final": 2.8714128046276786,
+          "ritmo_mediano": 5.720937700706487,
+          "semanas_act": 21.0,
+          "progresion": -7.433933754057842,
+          "ciudad": "LONDON"
+        }
+      ],
+      "dev_z": 0.28764837980270386,
+      "dev_z_k": 10
+    },
+    "dev_z_global": 0.19304031133651733
+  },
+  "descriptivo": {
+    "n": 14612,
+    "dist_sem_mediana": 37.61,
+    "dist_sem_p95": 98.29,
+    "registros_retenidos": 758434,
+    "registros_52_semanas": 759824,
+    "registros_faltantes": 1390,
+    "genero": {
+      "M": 73.13167259786478,
+      "F": 26.868327402135233
+    },
+    "grupo_etario": {
+      "35 - 54": 58.903640843142625,
+      "18 - 34": 33.33561456337257,
+      "55 +": 7.760744593484807
+    },
+    "paises": 106,
+    "por_maraton": {
+      "BERLIN": {
+        "atletas": 4243,
+        "pct": 29.037777169449768
+      },
+      "BOSTON": {
+        "atletas": 4117,
+        "pct": 28.175472214618125
+      },
+      "NEW YORK": {
+        "atletas": 2202,
+        "pct": 15.069805639200656
+      },
+      "LONDON": {
+        "atletas": 2099,
+        "pct": 14.364905557076376
+      },
+      "CHICAGO": {
+        "atletas": 1017,
+        "pct": 6.960032849712565
+      },
+      "TOKYO": {
+        "atletas": 934,
+        "pct": 6.392006569942513
+      }
+    },
+    "dos_mas_frecuentes_pct": 57.213249384067886
+  }
+}
